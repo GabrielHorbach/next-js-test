@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "deploy": "cp -r out ~/Documents/Gabriel/GabrielHorbach.github.io",
+    "deploy": "cp -r out/* ~/Documents/Gabriel/GabrielHorbach.github.io && cd ~/Documents/Gabriel/GabrielHorbach.github.io && git add . && git commit -m 'blog automatic update' && git push origin master",
     "start": "next start"
   },
   "dependencies": {
