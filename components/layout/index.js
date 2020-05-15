@@ -16,32 +16,26 @@ export default function Layout({ children, home }) {
           name="description"
           content="Oi! Sou o Gabriel e este é o meu blog. Sou desenvolvedor web/mobile, apaixonado por JavaScript, música e bodybuilding"
         />
-        <meta
-          property="og:image"
-          content={`https://og-image.now.sh/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
         {home ? (
           <>
-            <img
-              src="/images/profile.jpeg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
-            />
+            <div className={styles.imageWrapper}>
+              <img
+                src="/images/profile.jpg"
+                className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
+                alt={name}
+              />
+            </div>
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
-            <h2 className={styles.subtitle}>23, Full Stack developer, who loves JavaScript, music and bodybuilding (:</h2>
+            <h2 className={styles.subtitle}>23, Desenvolvedor Web Full Stack, ama JavaScript, música e bodybuilding (:</h2>
           </>
         ) : (
             <>
               <Link href="/">
                 <a>
                   <img
-                    src="/images/profile.jpeg"
+                    src="/images/profile.jpg"
                     className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                     alt={name}
                   />
@@ -59,7 +53,7 @@ export default function Layout({ children, home }) {
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
-            <a>← Back to home</a>
+            <a>← Voltar</a>
           </Link>
         </div>
       )}

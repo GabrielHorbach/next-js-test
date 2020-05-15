@@ -11,14 +11,20 @@
   margin-bottom: 1rem;
 }
 
+.imageWrapper {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
 .headerImage {
   width: 6rem;
   height: 6rem;
 }
 
 .headerHomeImage {
-  width: 8rem;
-  height: 8rem;
+  width: 100%;
+  object-fit: contain;
 }
 
 .subtitle {

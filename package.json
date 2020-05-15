@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
+    "deploy": "cp -r out ~/Documents/Gabriel/GabrielHorbach.github.io",
     "start": "next start"
   },
   "dependencies": {

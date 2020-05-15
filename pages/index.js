@@ -12,14 +12,14 @@ export default function Home({ allPostsData }) {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
-        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"></link>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hey! I'm Gabriel and this is my blog.</p>
-        <p>Here you will find posts about technologies that I'm using or even learning at the moment as well as cool stuff about music and bodybuilding. Have a nice reading!</p>
+        <p>Oi! Eu sou o Gabriel e esse é o meu blog.</p>
+        <p>Aqui você vai encontrar posts sobre as tecnologias que eu estou usando e aprendendo no
+          momento como também coisas legais sobre música e bodybuilding. Tenha uma boa leitura!</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Latest posts</h2>
+        <h2 className={utilStyles.headingLg}>Últimos posts</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
